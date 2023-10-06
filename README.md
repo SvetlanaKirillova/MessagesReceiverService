@@ -17,20 +17,22 @@
 - **db.user.password** – posgreSQL user's password
 
 ## Rest Methods Docs
-/**
+
+
 * REST Controller for managing messages.
-  */
+
   @RestController
   @RequestMapping("/api/messages")
   public class MessageReceiverController {
   private final MessageService messageService;
 
 
-  /**
+  
+
     * Handles a GET request to retrieve a list of messages.
-    *
+
     * @return A {@link ResponseEntity} containing a {@link MessageListDto} with messages.
-      */
+      
       @GetMapping("/")
       public ResponseEntity<MessageListDto> handleGetAllMessages() {
 
@@ -38,7 +40,6 @@
       return ResponseEntity.ok(messagesList);
       }
 
-  /**
     * Handles a GET request to retrieve a list of messages by sender.
     *
     * @param sender The sender's name to filter messages.
@@ -51,7 +52,8 @@
       return ResponseEntity.ok(messageListDto);
       }
 
-  /**
+
+
     * Handles a POST request to save and send a message.
     *
     * @param messageDto The {@link MessageDto} containing the message details.
@@ -67,5 +69,4 @@
 
       // Return a ResponseEntity with a success message.
       return ResponseEntity.ok("Message received and sent to Kafka");
-      }
-      }
+      
