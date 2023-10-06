@@ -1,8 +1,6 @@
 ## Messages Receiver Service(Kafka Producer)
 
 
-PostgreSQL database
-
 ## Server Parameters
 - **host:** `localhost`
 - **Port:** `8080`
@@ -12,7 +10,7 @@ PostgreSQL database
 - **spring.kafka.bootstrap-servers:** `specify here kafka server host/port`
 - **kafka.topic:** `kafka topic name`
 
-## Configure application.properties: 
+## Configure PosgreSQL parameters in application.properties: 
 
 - **your.db**  – postreSQL DataBase
 - **db.user** – postgreSQL username
